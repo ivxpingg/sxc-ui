@@ -1,0 +1,73 @@
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+@mixin setBorder( $color: #dcdddd, $border-radius: 0, $type: solid) {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    color: $color;
+    border: 1px $type $color;
+    transform: scale(.5);
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    border-radius: $border-radius;
+}
+
+
+@mixin setTopLine($color: #dcdddd, $type: solid) {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px $type $color;
+    color: $color;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+@mixin setBottomLine($color: #dcdddd, $type: solid) {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px $type $color;
+    color: $color;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+
+@mixin setLeftLine($color: #dcdddd, $type: solid) {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px $type $color;
+    color: $color;
+    transform-origin: 0 0;
+    transform: scaleX(0.5);
+}
+
+@mixin setRightLine($color: #dcdddd, $type: solid) {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px $type $color;
+    color: $color;
+    transform-origin: 100% 0;
+    transform: scaleX(0.5);
+}

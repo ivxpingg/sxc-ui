@@ -1,0 +1,25 @@
+@import "../../base/fn";
+
+.sxc-btn {
+    position: relative;
+    display: block;
+    margin-left: 14px;
+    margin-right: 14px;
+    box-sizing: border-box;
+    font-size: $sxc-btn_font_size;
+    text-align: center;
+    text-decoration: none;
+    color: $sxc-btn_font_color;
+    @include setTapColor();
+    line-height: $sxc-btn_line_height;
+    border-radius: $sxc-btn_border_radius;
+    overflow: hidden;
+
+    &:after {
+       @include setBorder($sxc-btn_border_color, $sxc-btn_border_radius * 2);
+    }
+}
+
+.weui-btn_inline {
+    display: inline-block;
+}
