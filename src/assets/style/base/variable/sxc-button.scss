@@ -15,7 +15,7 @@ $sxc-btn_disabled_font_color:       rgba(255,255,255,.6);
 /**
  * sxc_btn_default
  */
-$sxc-btn_border_color:              rgba(0, 0, 0, 0.2);
+$sxc-btn_default_border_color:              rgba(0, 0, 0, 0.2);
 $sxc-btn_default_bg:                #F8F8F8;
 $sxc-btn_default_active_bg:         #DEDEDE;
 $sxc-btn_default_disabled_bg:       #F7F7F7;
@@ -23,15 +23,15 @@ $sxc-btn_default_disabled_bg:       #F7F7F7;
 /**
  * sxc_btn_primary
  */
-$sxc-btn_border_color:              rgba(0, 0, 0, 0.2);
-$sxc-btn_default_bg:                #1AAD19;
-$sxc-btn_default_active_bg:         #179B16;
-$sxc-btn_default_disabled_bg:       #9ED99D;
+$sxc-btn_primary_border_color:      rgba(0, 0, 0, 0.2);
+$sxc-btn_primary_bg:                #1AAD19;
+$sxc-btn_primary_active_bg:         #179B16;
+$sxc-btn_primary_disabled_bg:       #9ED99D;
 
 /**
  * sxc_btn_warn
  */
-$sxc-btn_border_color:              rgba(0, 0, 0, 0.2);
+$sxc-btn_warn_border_color:              rgba(0, 0, 0, 0.2);
 $sxc-btn_warn_bg:                   #E64340;
 $sxc-btn_warn_active_bg:            #CE3C39;
 $sxc-btn_warn_disabled_bg:          #EC8B89;

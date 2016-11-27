@@ -1,0 +1,15 @@
+@import "../../base/fn";
+
+.sxc-btn_primary {
+  background-color: $sxc-btn_primary_bg;
+  &:not(.sxc-btn_disabled):visited {
+    color: $sxc-btn_font_color;
+  }
+  &:not(.sxc-btn_disabled):active {
+    color: $sxc-btn_active_font_color;
+  }
+
+  &:after {
+     @include setBorder($sxc-btn_primary_border_color, $sxc-btn_border_radius * 2);
+  }
+}
