@@ -1,0 +1,23 @@
+/**
+ * 按钮
+ */
+
+//$btn： 按钮背景色,
+//$btn_color:　字体颜色
+//$btn_active_color: 选择字体颜色
+//$btn_border_color: 边框颜色
+//$btn_border_radius： 边框圆角
+@mixin btn($btn_color, $btn_active_color, $btn_bg, $btn_active_bg, $btn_border_color, $btn_border_radius) {
+    background-color: $btn_bg;
+    &:not(.sxc-btn-disabled):visited {
+      color: $btn_color;
+    }
+    &:not(.sxc-btn-disabled):active {
+      color: $btn_active_color;
+      background-color: $btn_active_bg;
+    }
+
+    &:after {
+       @include setBorder($btn_border_color, $btn_border_radius * 2);
+    }
+}

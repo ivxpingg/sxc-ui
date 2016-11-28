@@ -1,4 +1,55 @@
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
 
+
+//当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色。
+//该属性可以只设置透明度。如果未设置透明度，iOS Safari使用默认的透明度。当透明度设为0，则会禁用此属性；当透明度设为1，元素在点击时不可见。
+//适用于：链接元素比如新窗口打开，img元素比如保存图像等等
 @mixin setTapColor($color: rgba(0,0,0,0)) {
     -webkit-tap-highlight-color: $color;
+}
+
+//当你触摸并按住触摸目标时候，禁止或显示系统默认菜单。在iOS上，当你触摸并按住触摸的目标，比如一个链接，Safari浏览器将显示链接有关的系统默认菜单。这个属性可以让你禁用系统默认菜单。
+//iOS 2.0及更高版本的Safari浏览器可用
+//Android尚不明确
+//
+// 默认值： inherit
+// none：系统默认菜单被禁用
+// inherit：系统默认菜单不被禁用
+// 适用于：链接元素比如新窗口打开，img元素比如保存图像等等
+@mixin setTouchCallout {
+    -webkit-touch-callout: none;
+}
+
+//改变按钮和其他控件的外观，使其类似于原生控件。
+@mixin setAappearance($value: none) {
+    -webkit-appearance: $value;
+}
+
+
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+@mixin setLineClamp($num: 2) {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
 }

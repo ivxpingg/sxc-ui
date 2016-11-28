@@ -1,1 +1,570 @@
-.sxc-btn{position:relative;display:block;margin-left:14px;margin-right:14px;box-sizing:border-box;font-size:18px;text-align:center;text-decoration:none;color:#fff;-webkit-tap-highlight-color:transparent;line-height:2.55556;border-radius:5px;overflow:hidden}.sxc-btn:after{content:'';position:absolute;left:0;top:0;width:200%;height:200%;color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.2);transform:scale(0.5);box-sizing:border-box;transform-origin:0 0;border-radius:10px}.weui-btn_inline{display:inline-block}.sxc-btn_primary{background-color:#1AAD19}.sxc-btn_primary:not(.sxc-btn_disabled):visited{color:#fff}.sxc-btn_primary:not(.sxc-btn_disabled):active{color:rgba(255,255,255,0.6)}.sxc-btn_primary:after{content:'';position:absolute;left:0;top:0;width:200%;height:200%;color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.2);transform:scale(0.5);box-sizing:border-box;transform-origin:0 0;border-radius:10px}button.sxc-btn,input.sxc-btn{width:100%;border-width:0;outline:0;-webkit-appearance:none}button.sxc-btn:focus,input.sxc-btn:focus{outline:none}button.weui-btn_inline,button.weui-btn_mini,input.weui-btn_inline,input.weui-btn_mini{width:auto}
+@charset "UTF-8";
+/**
+ * 按钮 button
+ */
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 2.55556;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sxc-btn:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  border-radius: 10px;
+}
+
+.weui-btn-inline {
+  display: inline-block;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn-primary {
+  background-color: #1AAD19;
+}
+.sxc-btn-primary:not(.sxc-btn-disabled):visited {
+  color: #FFFFFF;
+}
+.sxc-btn-primary:not(.sxc-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #179B16;
+}
+.sxc-btn-primary:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  border-radius: 10px;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn-default {
+  color: #000000;
+  background-color: #F8F8F8;
+}
+.sxc-btn-default:not(.sxc-btn-disabled):visited {
+  color: #000000;
+}
+.sxc-btn-default:not(.sxc-btn-disabled):active {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #DEDEDE;
+}
+.sxc-btn-default:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  border-radius: 10px;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn-warn {
+  background-color: #E64340;
+}
+.sxc-btn-warn:not(.sxc-btn-disabled):visited {
+  color: #FFFFFF;
+}
+.sxc-btn-warn:not(.sxc-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #CE3C39;
+}
+.sxc-btn-warn:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  border-radius: 10px;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn-disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sxc-btn-disabled.sxc-btn-default {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #F7F7F7;
+}
+.sxc-btn-disabled.sxc-btn-primary {
+  background-color: #9ED99D;
+}
+.sxc-btn-disabled.sxc-btn-warn {
+  background-color: #EC8B89;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+.sxc-btn-plain-primary {
+  color: #1aad19;
+  border: 1px solid #1aad19;
+}
+.sxc-btn-plain-primary:not(.sxc-btn-plain-disabled):active {
+  color: rgba(26, 173, 25, 0.6);
+  border-color: rgba(26, 173, 25, 0.6);
+}
+.sxc-btn-plain-primary:after {
+  border-width: 0;
+}
+
+.sxc-btn-plain-default {
+  color: #353535;
+  border: 1px solid #353535;
+}
+.sxc-btn-plain-default:not(.sxc-btn-plain-disabled):active {
+  color: rgba(53, 53, 53, 0.6);
+  border-color: rgba(53, 53, 53, 0.6);
+}
+.sxc-btn-plain-default:after {
+  border-width: 0;
+}
+
+.sxc-btn-plain-disabled {
+  color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+button.sxc-btn, input.sxc-btn {
+  width: 100%;
+  border-width: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+button.sxc-btn:focus, input.sxc-btn:focus {
+  outline: none;
+}
+button.sxc-btn-inline, button.sxc-btn-mini, input.sxc-btn-inline, input.sxc-btn-mini {
+  width: auto;
+}
+button.sxc-btn-plain-primary, button.sxc-btn-plain-default, input.sxc-btn-plain-primary, input.sxc-btn-plain-default {
+  border-width: 1px;
+  background-color: transparent;
+}
+
+.sxc-btn-mini {
+  display: inline-block;
+  padding: 0 1.32em;
+  line-height: 2.3;
+  font-size: 13px;
+}
+
+/*按钮与按钮之间的间隙 gap between btn*/
+.sxc-btn + .sxc-btn {
+  margin-top: 15px;
+}
+
+.sxc-btn.sxc-btn-inline + .sxc-btn.sxc-btn-inline {
+  margin-top: auto;
+  margin-left: 15px;
+}

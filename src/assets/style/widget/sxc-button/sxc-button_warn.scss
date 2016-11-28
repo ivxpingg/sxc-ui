@@ -1,0 +1,6 @@
+@import "../../base/fn";
+
+.sxc-btn-warn {
+    @include btn($sxc_btn_warn_font_color, $sxc_btn_warn_active_font_color, $sxc_btn_warn_bg, $sxc_btn_warn_active_bg,  $sxc_btn_warn_border_color,$sxc_btn_border_radius);
+
+}

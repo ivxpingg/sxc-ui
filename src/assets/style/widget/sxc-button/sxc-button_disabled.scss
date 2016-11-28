@@ -1,0 +1,15 @@
+@import "../../base/fn";
+
+.sxc-btn-disabled {
+    color: $sxc_btn_disabled_font_color;
+    &.sxc-btn-default {
+        color: $sxc_btn_default_disabled_font_color;
+        background-color: $sxc_btn_default_disabled_bg;
+    }
+    &.sxc-btn-primary {
+        background-color: $sxc_btn_primary_disabled_bg;
+    }
+    &.sxc-btn-warn {
+        background-color: $sxc_btn_warn_disabled_bg;
+    }
+}
