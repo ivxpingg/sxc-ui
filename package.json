@@ -9,6 +9,7 @@
   "author": "sgj",
   "license": "ISC",
   "devDependencies": {
+    "glob": "^7.1.1",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-cssmin": "^1.0.2",
@@ -19,6 +20,7 @@
     "time-grunt": "^1.4.0",
     "vue": "^2.1.3",
     "vue-cli": "^2.5.1",
+    "webfonts-generator": "^0.3.5",
     "webpack": "^1.13.3"
   }
 }
