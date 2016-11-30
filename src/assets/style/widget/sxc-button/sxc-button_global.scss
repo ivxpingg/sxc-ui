@@ -3,23 +3,25 @@
 .sxc-btn {
     position: relative;
     display: block;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
     box-sizing: border-box;
-    font-size: $sxc-btn_font_size;
+    font-size: $sxc_btn_font_size;
     text-align: center;
     text-decoration: none;
-    color: $sxc-btn_font_color;
+    color: $sxc_btn_font_color;
     @include setTapColor();
-    line-height: $sxc-btn_line_height;
-    border-radius: $sxc-btn_border_radius;
+    line-height: $sxc_btn_line_height;
+    border-radius: $sxc_btn_border_radius;
     overflow: hidden;
 
     &:after {
-       @include setBorder($sxc-btn_border_color, $sxc-btn_border_radius * 2);
+       @include setBorder($sxc_btn_border_color, $sxc_btn_border_radius * 2);
     }
 }
 
-.weui-btn_inline {
+.weui-btn-inline {
     display: inline-block;
 }

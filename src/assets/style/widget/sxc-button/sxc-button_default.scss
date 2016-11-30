@@ -1,0 +1,6 @@
+@import "../../base/fn";
+
+.sxc-btn-default {
+    color: $sxc_btn_default_font_color;
+    @include btn($sxc_btn_default_font_color, $sxc_btn_default_active_font_color, $sxc_btn_default_bg, $sxc_btn_default_active_bg,  $sxc_btn_default_border_color,$sxc_btn_border_radius);
+}

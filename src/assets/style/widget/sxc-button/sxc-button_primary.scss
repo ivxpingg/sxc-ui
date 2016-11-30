@@ -1,15 +1,16 @@
 @import "../../base/fn";
 
-.sxc-btn_primary {
-  background-color: $sxc-btn_primary_bg;
-  &:not(.sxc-btn_disabled):visited {
-    color: $sxc-btn_font_color;
-  }
-  &:not(.sxc-btn_disabled):active {
-    color: $sxc-btn_active_font_color;
-  }
-
-  &:after {
-     @include setBorder($sxc-btn_primary_border_color, $sxc-btn_border_radius * 2);
-  }
+.sxc-btn-primary {
+    @include btn($sxc_btn_primary_font_color, $sxc_btn_primary_active_font_color, $sxc_btn_primary_bg, $sxc_btn_primary_active_bg, $sxc_btn_primary_border_color,$sxc_btn_border_radius);
+  // background_color: $sxc_btn_primary_bg;
+  // &:not(.sxc_btn_disabled):visited {
+  //   color: $sxc_btn_font_color;
+  // }
+  // &:not(.sxc_btn_disabled):active {
+  //   color: $sxc_btn_active_font_color;
+  // }
+  //
+  // &:after {
+  //    @include setBorder($sxc_btn_primary_border_color, $sxc_btn_border_radius * 2);
+  // }
 }

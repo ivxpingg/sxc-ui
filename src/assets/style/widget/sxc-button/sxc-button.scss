@@ -1,6 +1,10 @@
 @import '../../base/fn';
 @import './sxc-button_global';
 @import './sxc-button_primary';
+@import './sxc-button_default';
+@import './sxc-button_warn';
+@import './sxc-button_disabled';
+@import './sxc-button_plain';
 
 button, input {
     &.sxc-btn {
@@ -13,7 +17,29 @@ button, input {
         }
     }
 
-    &.weui-btn_inline,&.weui-btn_mini {
+    &.sxc-btn-inline, &.sxc-btn-mini {
         width: auto;
     }
+
+    &.sxc-btn-plain-primary, &.sxc-btn-plain-default {
+        border-width: 1px;
+        background-color: transparent;
+    }
+}
+
+.sxc-btn-mini {
+    display: inline-block;
+    padding: 0 1.32em;
+    line-height: $sxc_btn_mini_line_height;
+    font-size: $sxc_btn_mini_font_size;
+}
+
+/*按钮与按钮之间的间隙 gap between btn*/
+.sxc-btn + .sxc-btn {
+    margin-top: $sxc_btn_default_gap;
+}
+
+.sxc-btn.sxc-btn-inline + .sxc-btn.sxc-btn-inline {
+    margin-top: auto;
+    margin-left: $sxc_btn_default_gap;
 }
