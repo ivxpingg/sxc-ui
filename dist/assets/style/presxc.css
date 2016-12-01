@@ -46,6 +46,9 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
+ * sxc_btn_yellow
+ */
+/**
  * 朴素版
  * sxc_btn_plain_primary
  */
@@ -55,6 +58,10 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  */
 /**
  * sxc_btn_mini
+ */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
  */
 /**
  * 通过伪元素实现0.5边框
@@ -100,6 +107,9 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
+ * sxc_btn_yellow
+ */
+/**
  * 朴素版
  * sxc_btn_plain_primary
  */
@@ -109,6 +119,10 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  */
 /**
  * sxc_btn_mini
+ */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
  */
 .sxc-btn {
   position: relative;
@@ -123,11 +137,11 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
   text-decoration: none;
   color: #FFFFFF;
   -webkit-tap-highlight-color: transparent;
-  line-height: 2.55556;
+  line-height: 2.61111;
   border-radius: 5px;
   overflow: hidden;
 }
-.sxc-btn:after {
+.sxc-btn:not(.sxc-btn-smooth):after {
   content: '';
   position: absolute;
   left: 0;
@@ -190,6 +204,9 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
+ * sxc_btn_yellow
+ */
+/**
  * 朴素版
  * sxc_btn_plain_primary
  */
@@ -200,29 +217,48 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
 /**
  * sxc_btn_mini
  */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
+ */
 .sxc-btn-primary {
-  background-color: #1AAD19;
+  background-color: #159ee2;
+  border: 1px solid #008cd1;
+  border-radius: 5px;
 }
 .sxc-btn-primary:not(.sxc-btn-disabled):visited {
   color: #FFFFFF;
 }
 .sxc-btn-primary:not(.sxc-btn-disabled):active {
   color: rgba(255, 255, 255, 0.6);
-  background-color: #179B16;
+  background-color: #0895DB;
 }
-.sxc-btn-primary:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 200%;
-  height: 200%;
-  color: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  transform: scale(0.5);
-  box-sizing: border-box;
-  transform-origin: 0 0;
-  border-radius: 10px;
+
+.sxc-btn-smooth-primary {
+  color: #0CA0E6;
+  background-color: #FFFFFF;
+  border: 1px solid #0CA0E6;
+  border-radius: 19px;
+}
+.sxc-btn-smooth-primary:not(.sxc-btn-disabled):visited {
+  color: #0CA0E6;
+}
+.sxc-btn-smooth-primary:not(.sxc-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #159ee2;
+}
+
+.sxc-btn-yellow {
+  background-color: #FFFFFF;
+  border: 1px solid #ff703e;
+  border-radius: 5px;
+}
+.sxc-btn-yellow:not(.sxc-btn-disabled):visited {
+  color: #ff703e;
+}
+.sxc-btn-yellow:not(.sxc-btn-disabled):active {
+  color: white;
+  background-color: #FF7C25;
 }
 
 /**
@@ -269,6 +305,9 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
+ * sxc_btn_yellow
+ */
+/**
  * 朴素版
  * sxc_btn_plain_primary
  */
@@ -279,30 +318,22 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
 /**
  * sxc_btn_mini
  */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
+ */
 .sxc-btn-default {
   color: #000000;
-  background-color: #F8F8F8;
+  background-color: #FFFFFF;
+  border: 1px solid #ababab;
+  border-radius: 5px;
 }
 .sxc-btn-default:not(.sxc-btn-disabled):visited {
   color: #000000;
 }
 .sxc-btn-default:not(.sxc-btn-disabled):active {
   color: rgba(0, 0, 0, 0.6);
-  background-color: #DEDEDE;
-}
-.sxc-btn-default:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 200%;
-  height: 200%;
-  color: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  transform: scale(0.5);
-  box-sizing: border-box;
-  transform-origin: 0 0;
-  border-radius: 10px;
+  background-color: #DFDFDF;
 }
 
 /**
@@ -349,6 +380,9 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
+ * sxc_btn_yellow
+ */
+/**
  * 朴素版
  * sxc_btn_plain_primary
  */
@@ -359,29 +393,21 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
 /**
  * sxc_btn_mini
  */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
+ */
 .sxc-btn-warn {
-  background-color: #E64340;
+  background-color: #E94F4F;
+  border: 1px solid #D64949;
+  border-radius: 5px;
 }
 .sxc-btn-warn:not(.sxc-btn-disabled):visited {
   color: #FFFFFF;
 }
 .sxc-btn-warn:not(.sxc-btn-disabled):active {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #CE3C39;
-}
-.sxc-btn-warn:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 200%;
-  height: 200%;
-  color: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  transform: scale(0.5);
-  box-sizing: border-box;
-  transform-origin: 0 0;
-  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #D14747;
 }
 
 /**
@@ -428,72 +454,7 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  * sxc_btn_warn
  */
 /**
- * 朴素版
- * sxc_btn_plain_primary
- */
-/**
- * 朴素版
- * sxc_btn_plain_default
- */
-/**
- * sxc_btn_mini
- */
-.sxc-btn-disabled {
-  color: rgba(255, 255, 255, 0.6);
-}
-.sxc-btn-disabled.sxc-btn-default {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #F7F7F7;
-}
-.sxc-btn-disabled.sxc-btn-primary {
-  background-color: #9ED99D;
-}
-.sxc-btn-disabled.sxc-btn-warn {
-  background-color: #EC8B89;
-}
-
-/**
- * 通过伪元素实现0.5边框
- * $color         边框颜色
- * $border-radius 边框圆角
- * $type          边框类型
- */
-/**
- * WebKit的CSS扩展(WebKit是私有属性)
- */
-/**
- * 概述：
--webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
-限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
-display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
--webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
-text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
-语法：
--webkit-line-clamp：<number>
-默认值： ? ?表示不清楚；
-适用于：块元素
-继承性：无
-动画性：否
-计算值：指定的值
-取值：
-<number>：
-块元素显示的文本的行数。
- */
-/**
- * 按钮
- */
-/**
- * 正常按钮
- * sxc_btn
- */
-/**
- * sxc_btn_default
- */
-/**
- * sxc_btn_primary
- */
-/**
- * sxc_btn_warn
+ * sxc_btn_yellow
  */
 /**
  * 朴素版
@@ -505,6 +466,10 @@ text-overflow，可以用来多行文本的情况下，用省略号“...”隐�
  */
 /**
  * sxc_btn_mini
+ */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
  */
 .sxc-btn-plain-primary {
   color: #1aad19;
@@ -556,7 +521,17 @@ button.sxc-btn-plain-primary, button.sxc-btn-plain-default, input.sxc-btn-plain-
   display: inline-block;
   padding: 0 1.32em;
   line-height: 2.3;
-  font-size: 13px;
+  font-size: 12px;
+}
+.sxc-btn-mini.sxc-btn-yellow {
+  color: #ff703e;
+}
+
+.sxc-btn-smooth {
+  display: inline-block;
+  padding: 0 1.32em;
+  line-height: 2.375;
+  font-size: 16px;
 }
 
 /*按钮与按钮之间的间隙 gap between btn*/
@@ -567,6 +542,91 @@ button.sxc-btn-plain-primary, button.sxc-btn-plain-default, input.sxc-btn-plain-
 .sxc-btn.sxc-btn-inline + .sxc-btn.sxc-btn-inline {
   margin-top: auto;
   margin-left: 15px;
+}
+
+/**
+ * 通过伪元素实现0.5边框
+ * $color         边框颜色
+ * $border-radius 边框圆角
+ * $type          边框类型
+ */
+/**
+ * WebKit的CSS扩展(WebKit是私有属性)
+ */
+/**
+ * 概述：
+-webkit-line-clamp 是一个 不规范的属性（unsupported WebKit property），它没有出现在 CSS 规范草案中。
+限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+语法：
+-webkit-line-clamp：<number>
+默认值： ? ?表示不清楚；
+适用于：块元素
+继承性：无
+动画性：否
+计算值：指定的值
+取值：
+<number>：
+块元素显示的文本的行数。
+ */
+/**
+ * 按钮
+ */
+/**
+ * 正常按钮
+ * sxc_btn
+ */
+/**
+ * sxc_btn_default
+ */
+/**
+ * sxc_btn_primary
+ */
+/**
+ * sxc_btn_warn
+ */
+/**
+ * sxc_btn_yellow
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_primary
+ */
+/**
+ * 朴素版
+ * sxc_btn_plain_default
+ */
+/**
+ * sxc_btn_mini
+ */
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
+ */
+.sxc-btn-disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sxc-btn-disabled.sxc-btn-default {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF;
+}
+.sxc-btn-disabled.sxc-btn-primary {
+  background-color: #a1d8f3;
+}
+.sxc-btn-disabled.sxc-btn-warn {
+  background-color: #F7BFBF;
+}
+.sxc-btn-disabled.sxc-btn-yellow {
+  color: rgba(255, 112, 62, 0.6);
+}
+.sxc-btn-disabled.sxc-btn-yellow.sxc-btn-mini {
+  border-color: rgba(255, 112, 62, 0.6);
+}
+.sxc-btn-disabled.sxc-btn-smooth-primary {
+  background-color: #a1d8f3;
+  border-color: #7ac9f0;
 }
 
 /*# sourceMappingURL=dist/assets/style/presxc.css.map */

@@ -1,0 +1,3 @@
+.sxc-btn-yellow {
+    @include btn($sxc_btn_yellow_font_color, $sxc_btn_yellow_active_font_color, $sxc_btn_yellow_bg, $sxc_btn_yellow_active_bg, $sxc_btn_yellow_border_color,$sxc_btn_border_radius);
+}

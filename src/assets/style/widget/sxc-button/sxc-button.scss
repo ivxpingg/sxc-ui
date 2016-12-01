@@ -1,9 +1,9 @@
 @import '../../base/fn';
 @import './sxc-button_global';
 @import './sxc-button_primary';
+@import './sxc-button_yellow';
 @import './sxc-button_default';
 @import './sxc-button_warn';
-@import './sxc-button_disabled';
 @import './sxc-button_plain';
 
 button, input {
@@ -32,6 +32,17 @@ button, input {
     padding: 0 1.32em;
     line-height: $sxc_btn_mini_line_height;
     font-size: $sxc_btn_mini_font_size;
+
+    &.sxc-btn-yellow {
+        color: $sxc_btn_yellow_font_color;
+    }
+}
+
+.sxc-btn-smooth {
+    display: inline-block;
+    padding: 0 1.32em;
+    line-height: $sxc_btn_smooth_line_height;
+    font-size: $sxc_btn_smooth_font_size;
 }
 
 /*按钮与按钮之间的间隙 gap between btn*/
@@ -43,3 +54,5 @@ button, input {
     margin-top: auto;
     margin-left: $sxc_btn_default_gap;
 }
+
+@import './sxc-button_disabled';

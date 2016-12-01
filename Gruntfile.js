@@ -64,32 +64,11 @@ module.exports = function(grunt){
             target: {
                 files : {'dist/assets/style/presxc.min.css':'dist/assets/style/presxc.css'}
             }
-        },
-
-        fontcustom: {
-            options: {
-              //fontName: "dd"
-            },
-            target: {
-                src: 'src/assets/fonts/icon1',
-                dest: 'dist/assets/fonts'
-            }
-        },
-
-        webfont: {
-            icons: {
-                src: 'src/assets/fonts/*.svg',
-                dest: 'dist/assets/fonts',
-                options: {
-                   template: 'dist/assets/fonts/tmpl.css'
-                }
-            }
         }
+
     });
-grunt.loadNpmTasks('grunt-fontcustom');
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('sas', ['sass']);
     grunt.registerTask('start', ['sass','autoprefixer']);
     grunt.registerTask('auto', ['autoprefixer']);
-    grunt.registerTask('icon', ['webfont']);
 }

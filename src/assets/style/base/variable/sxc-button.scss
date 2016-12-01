@@ -4,7 +4,7 @@
  * sxc_btn
  */
 $sxc_btn_font_size:                 18px;
-$sxc_btn_height:                    46px;
+$sxc_btn_height:                    47px;
 $sxc_btn_line_height:               $sxc_btn_height / $sxc_btn_font_size;
 $sxc_btn_border_color:              rgba(0, 0, 0, 0.2);
 $sxc_btn_border_radius:             5px;
@@ -21,30 +21,43 @@ $sxc_btn_default_gap:               15px;
 $sxc_btn_default_font_color:          #000000;
 $sxc_btn_default_active_font_color:   rgba(0, 0, 0, .6);
 $sxc_btn_default_disabled_font_color: rgba(0, 0, 0, 0.3);
-$sxc_btn_default_border_color:        rgba(0, 0, 0, 0.2);
-$sxc_btn_default_bg:                  #F8F8F8;
-$sxc_btn_default_active_bg:           #DEDEDE;
-$sxc_btn_default_disabled_bg:         #F7F7F7;
+$sxc_btn_default_border_color:        #ababab;
+$sxc_btn_default_bg:                  #FFFFFF;
+$sxc_btn_default_active_bg:           #DFDFDF;
+$sxc_btn_default_disabled_bg:         #FFFFFF;
 
 /**
  * sxc_btn_primary
  */
 $sxc_btn_primary_font_color:        #FFFFFF;
 $sxc_btn_primary_active_font_color: rgba(255,255,255, .6);
-$sxc_btn_primary_border_color:      rgba(0, 0, 0, 0.2);
-$sxc_btn_primary_bg:                #1AAD19;
-$sxc_btn_primary_active_bg:         #179B16;
-$sxc_btn_primary_disabled_bg:       #9ED99D;
+$sxc_btn_primary_border_color:      #008cd1;
+$sxc_btn_primary_bg:                #159ee2;
+$sxc_btn_primary_active_bg:         #0895DB;
+$sxc_btn_primary_disabled_bg:       #a1d8f3;
 
 /**
  * sxc_btn_warn
  */
 $sxc_btn_warn_font_color:           #FFFFFF;
-$sxc_btn_warn_active_font_color: rgba(255,255,255, .6);
-$sxc_btn_warn_border_color:         rgba(0, 0, 0, 0.2);
-$sxc_btn_warn_bg:                   #E64340;
-$sxc_btn_warn_active_bg:            #CE3C39;
-$sxc_btn_warn_disabled_bg:          #EC8B89;
+$sxc_btn_warn_active_font_color:    rgba(255,255,255, .3);
+$sxc_btn_warn_disabled_font_color:  rgba(255,255,255, .6);
+$sxc_btn_warn_border_color:         #D64949;
+$sxc_btn_warn_bg:                   #E94F4F;
+$sxc_btn_warn_active_bg:            #D14747;
+$sxc_btn_warn_disabled_bg:          #F7BFBF;
+
+/**
+ * sxc_btn_yellow
+ */
+ $sxc_btn_yellow_font_color:           rgba(255,112,62, 1);
+ $sxc_btn_yellow_active_font_color:    rgba(255,255,255, 1);
+ $sxc_btn_yellow_disabled_font_color:  rgba(255,112,62, .6);
+ $sxc_btn_yellow_border_color:         rgba(255,112,62, 1);
+ $sxc_btn_yellow_disabled_border_color:rgba(255,112,62, 0.6);
+ $sxc_btn_yellow_bg:                   #FFFFFF;
+ $sxc_btn_yellow_active_bg:            #FF7C25;
+ $sxc_btn_yellow_disabled_bg:          #FFFFFF;
 
 
 /**
@@ -65,8 +78,29 @@ $sxc_btn_plain_default_active_color:           rgba(53,53,53,.6);
 $sxc_btn_plain_default_border_color:           rgba(53,53,53,1);
 $sxc_btn_plain_default_active_border_color:    rgba(53,53,53,.6);
 
+
 /**
  * sxc_btn_mini
  */
-$sxc_btn_mini_font_size:             13px;
-$sxc_btn_mini_line_height:           2.3;
+$sxc_btn_mini_font_size:                       12px;
+$sxc_btn_mini_line_height:                     2.3;
+$sxc_btn_mini_border_radius:                   4px;
+
+/**
+ * smoot(光滑) 按钮
+ * @type {[type]}
+ */
+$sxc_btn_smooth_font_size:                     16px;
+$sxc_btn_smooth_height:                        38px;
+$sxc_btn_smooth_line_height:                   $sxc_btn_smooth_height / $sxc_btn_smooth_font_size;
+$sxc_btn_smooth_border_radius:                 19px;
+
+//sxc_btn_smooth_primary
+$sxc_btn_smooth_primary_font_color:              #0CA0E6;
+$sxc_btn_smooth_primary_active_font_color:       rgba(255,255,255, .6);
+$sxc_btn_smooth_primary_disabled_font_color:     rgba(255,255,255, .6);
+$sxc_btn_smooth_primary_border_color:            #0CA0E6;
+$sxc_btn_smooth_primary_disabled_border_color:   #7ac9f0;
+$sxc_btn_smooth_primary_bg:                      #FFFFFF;
+$sxc_btn_smooth_primary_active_bg:               #159ee2;
+$sxc_btn_smooth_primary_disabled_bg:             #a1d8f3;

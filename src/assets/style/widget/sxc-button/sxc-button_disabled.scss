@@ -12,4 +12,16 @@
     &.sxc-btn-warn {
         background-color: $sxc_btn_warn_disabled_bg;
     }
+    &.sxc-btn-yellow {
+        color: $sxc_btn_yellow_disabled_font_color;
+
+        &.sxc-btn-mini {
+            border-color: $sxc_btn_yellow_disabled_border_color;
+        }
+    }
+
+    &.sxc-btn-smooth-primary {
+        background-color: $sxc_btn_smooth_primary_disabled_bg;
+        border-color: $sxc_btn_smooth_primary_disabled_border_color;
+    }
 }

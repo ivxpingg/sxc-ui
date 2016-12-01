@@ -17,7 +17,7 @@
     border-radius: $sxc_btn_border_radius;
     overflow: hidden;
 
-    &:after {
+    &:not(.sxc-btn-smooth):after {
        @include setBorder($sxc_btn_border_color, $sxc_btn_border_radius * 2);
     }
 }

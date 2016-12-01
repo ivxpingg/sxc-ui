@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "{{fontName}}";
+	src: {{{src}}};
+}
+
+[class^="{{classPrefix}}"], [class*=" {{classPrefix}}"] {
+    display: inline-block;
+    vertical-align: middle;
+    font: normal normal normal 14px/1 "{{fontName}}";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+[class^="{{classPrefix}}"]:before, [class*=" {{classPrefix}}"]:before {
+    display: inline-block;
+    margin: 0;
+}
+
+
+{{#each codepoints}}
+.{{../classPrefix}}{{@key}}:before {
+	content: "\\{{this}}";
+}
+{{/each}}

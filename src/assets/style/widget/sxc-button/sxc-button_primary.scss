@@ -14,3 +14,9 @@
   //    @include setBorder($sxc_btn_primary_border_color, $sxc_btn_border_radius * 2);
   // }
 }
+
+
+.sxc-btn-smooth-primary {
+    color: $sxc_btn_smooth_primary_font_color;
+    @include btn($sxc_btn_smooth_primary_font_color, $sxc_btn_smooth_primary_active_font_color, $sxc_btn_smooth_primary_bg, $sxc_btn_smooth_primary_active_bg, $sxc_btn_smooth_primary_border_color,$sxc_btn_smooth_border_radius);
+}

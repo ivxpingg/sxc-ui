@@ -1,19 +1,23 @@
 @font-face {
 	font-family: "sxcIconfont";
-	src: url("E://sgj/git/sxc-ui/src/assets/font/sxcIconfont.eot?a97e967831883bdd980046f1de0934b4?#iefix") format("embedded-opentype"),
-url("E://sgj/git/sxc-ui/src/assets/font/sxcIconfont.woff?a97e967831883bdd980046f1de0934b4") format("woff");
+	src: url("F://work/my/sxc-ui/dist/assets/fonts/sxcIconfont.eot?6e84dbfa17f93b917679f2fa49c132c4?#iefix") format("embedded-opentype"),
+url("F://work/my/sxc-ui/dist/assets/fonts/sxcIconfont.woff?6e84dbfa17f93b917679f2fa49c132c4") format("woff");
 }
 
-.sxc-icon {
-	line-height: 1;
+[class^="sxc-icon-"], [class*=" sxc-icon-"] {
+    display: inline-block;
+    vertical-align: middle;
+    font: normal normal normal 14px/1 "sxcIconfont";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
-.sxc-icon:before {
-	font-family: sxcIconfont !important;
-	font-style: normal;
-	font-weight: normal !important;
-	vertical-align: top;
+[class^="sxc-icon-"]:before, [class*=" sxc-icon-"]:before {
+    display: inline-block;
+    margin: 0;
 }
+
 
 .sxc-icon-alert:before {
 	content: "\f101";
