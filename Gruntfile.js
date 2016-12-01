@@ -74,6 +74,16 @@ module.exports = function(grunt){
                 src: 'src/assets/fonts/icon1',
                 dest: 'dist/assets/fonts'
             }
+        },
+
+        webfont: {
+            icons: {
+                src: 'src/assets/fonts/*.svg',
+                dest: 'dist/assets/fonts',
+                options: {
+                   template: 'dist/assets/fonts/tmpl.css'
+                }
+            }
         }
     });
 grunt.loadNpmTasks('grunt-fontcustom');
@@ -81,5 +91,5 @@ grunt.loadNpmTasks('grunt-fontcustom');
     grunt.registerTask('sas', ['sass']);
     grunt.registerTask('start', ['sass','autoprefixer']);
     grunt.registerTask('auto', ['autoprefixer']);
-    grunt.registerTask('icon', ['fontcustom']);
+    grunt.registerTask('icon', ['webfont']);
 }
