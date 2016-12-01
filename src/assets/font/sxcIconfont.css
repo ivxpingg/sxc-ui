@@ -1,0 +1,77 @@
+@font-face {
+	font-family: "sxcIconfont";
+	src: url("E://sgj/git/sxc-ui/src/assets/font/sxcIconfont.eot?a97e967831883bdd980046f1de0934b4?#iefix") format("embedded-opentype"),
+url("E://sgj/git/sxc-ui/src/assets/font/sxcIconfont.woff?a97e967831883bdd980046f1de0934b4") format("woff");
+}
+
+.sxc-icon {
+	line-height: 1;
+}
+
+.sxc-icon:before {
+	font-family: sxcIconfont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.sxc-icon-alert:before {
+	content: "\f101";
+}
+.sxc-icon-all:before {
+	content: "\f102";
+}
+.sxc-icon-arrows:before {
+	content: "\f103";
+}
+.sxc-icon-back:before {
+	content: "\f104";
+}
+.sxc-icon-calendar:before {
+	content: "\f105";
+}
+.sxc-icon-close:before {
+	content: "\f106";
+}
+.sxc-icon-copy:before {
+	content: "\f107";
+}
+.sxc-icon-delete:before {
+	content: "\f108";
+}
+.sxc-icon-details:before {
+	content: "\f109";
+}
+.sxc-icon-down:before {
+	content: "\f10a";
+}
+.sxc-icon-edit:before {
+	content: "\f10b";
+}
+.sxc-icon-export:before {
+	content: "\f10c";
+}
+.sxc-icon-icon_lock:before {
+	content: "\f10d";
+}
+.sxc-icon-info:before {
+	content: "\f10e";
+}
+.sxc-icon-lock-login:before {
+	content: "\f10f";
+}
+.sxc-icon-logoff:before {
+	content: "\f110";
+}
+.sxc-icon-page:before {
+	content: "\f111";
+}
+.sxc-icon-processed:before {
+	content: "\f112";
+}
+.sxc-icon-recent:before {
+	content: "\f113";
+}
+.sxc-icon-send:before {
+	content: "\f114";
+}
